@@ -12,7 +12,7 @@ $cidade = $_POST['cidade'];
 $destinos = $_POST['destinos'];
 $hospedagem = $_POST['hospedagem'];
 $mensagem = $_POST['mensagem'];
-$dt_cadastro = $_POST['dt-cadastro'];
+$dt_cadastro =$hoje = date('Y-m-d')
 
 
 //para investigar variaveis e expressões
@@ -24,9 +24,27 @@ try {
     //code...
     $pdo = new PDO('mysql:host=localhost;dbname=explore', 'root', '');
     //INSERT na tabela users
-    $sql = $pdo->prepare('INSERT into ursers(nome)')
+    $sql = $pdo->prepare('INSERT into urses(nome, email, sexo, idade, telefone, senha, estado, cidade, destinos, hospedagem, mensagem, dt_cadastro)values(:nome, :email, :sexo, :idade, :telefone, :senha, :estado, :cidade, :destinos, :hospedagem, :mensagem, :dt_cadastro)');
+    $sql->execute(array(
+        ':nome' =>$nome,
+        ':email' =>$email, 
+        ':sexo' =>$sexo, 
+        ':idade' =>$idade,
+        ':telefone' =>$telefone,
+        ':senha' =>$senha,
+        ':estado' =>$estado,
+         ':cidade' =>$cidade,
+         ':destinos' =>$destinos,
+         ':hospedagem' =>$hospedagem,
+         ':mensagem' =>$mensagem,
+         ':dt_cadastro' =>$dt_cadastro
+        
+    ));
 
-} catch (PDOException $erro) {
+    echo '<h1>Usuario cadastrado</h1>';
+    var_dump($_POST);
+
+} catch (PDOException $erro){
     //throw $th;
     //se ter erro exibe o erro
     echo $erro;
