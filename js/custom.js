@@ -6,9 +6,12 @@
 const urlParams = new URLSearchParams(window.location.search)
 var parCadastro = urlParams.get('cadastro')
 if(parCadastro == 'ok'){
-  alert('USUÁRIO CADASTRADO')
-}
 
+  let listaClass = document.getElementById('msg').classList 
+  listaClass.remove('d-none')
+  //alert('USUÁRIO CADASTRADO')
+  //window.location.href = 'http://localhost/sumer-php/'
+}
 
 const aviso = (msg)=> {
     alert(msg)
