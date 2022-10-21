@@ -12,7 +12,7 @@ $cidade = $_POST['cidade'];
 $destinos = $_POST['destinos'];
 $hospedagem = $_POST['hospedagem'];
 $mensagem = $_POST['mensagem'];
-$dt_cadastro =$hoje = date('Y-m-d')
+$dt_cadastro = $_POST['dt-cadastro'];
 
 
 //para investigar variaveis e expressões
@@ -20,29 +20,31 @@ $dt_cadastro =$hoje = date('Y-m-d')
 
 
 //CONECTA AO BANCO E GRAVA OS DADOS (INSERT COM PDO)
-try {
+try{
     //code...
     $pdo = new PDO('mysql:host=localhost;dbname=explore', 'root', '');
     //INSERT na tabela users
     $sql = $pdo->prepare('INSERT into urses(nome, email, sexo, idade, telefone, senha, estado, cidade, destinos, hospedagem, mensagem, dt_cadastro)values(:nome, :email, :sexo, :idade, :telefone, :senha, :estado, :cidade, :destinos, :hospedagem, :mensagem, :dt_cadastro)');
     $sql->execute(array(
-        ':nome' =>$nome,
-        ':email' =>$email, 
-        ':sexo' =>$sexo, 
-        ':idade' =>$idade,
-        ':telefone' =>$telefone,
-        ':senha' =>$senha,
-        ':estado' =>$estado,
-         ':cidade' =>$cidade,
-         ':destinos' =>$destinos,
-         ':hospedagem' =>$hospedagem,
-         ':mensagem' =>$mensagem,
-         ':dt_cadastro' =>$dt_cadastro
+        ':nome'=>$nome,
+        ':email'=>$email, 
+        ':sexo'=>$sexo, 
+        ':idade'=>$idade,
+        ':telefone'=>$telefone,
+        ':senha'=>$senha,
+        ':estado'=>$estado,
+         ':cidade'=>$cidade,
+         ':destinos'=>implode(',', $destinos), //converte array em texto
+         ':hospedagem'=>$hospedagem,
+         ':mensagem'=>$mensagem,
+         ':dt_cadastro'=> date('Y-m-d', strtotime($dt_cadastro))
         
     ));
 
-    echo '<h1>Usuario cadastrado</h1>';
-    var_dump($_POST);
+   /*  echo '<h1>Usuario cadastrado</h1>';
+    var_dump($_POST); */
+    //carrega a página index.html
+    header('Location: index.html');
 
 } catch (PDOException $erro){
     //throw $th;
