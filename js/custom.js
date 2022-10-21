@@ -1,4 +1,15 @@
 /*  ///////////////////  FUNÇÕES   ////////////////////  */
+
+//Ao carregar a pagina verifica o parametro "cadastro"
+//se o valor for "ok" exibe um alert
+
+const urlParams = new URLSearchParams(window.location.search)
+var parCadastro = urlParams.get('cadastro')
+if(parCadastro == 'ok'){
+  alert('USUÁRIO CADASTRADO')
+}
+
+
 const aviso = (msg)=> {
     alert(msg)
 }

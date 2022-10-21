@@ -43,8 +43,8 @@ try{
 
    /*  echo '<h1>Usuario cadastrado</h1>';
     var_dump($_POST); */
-    //carrega a página index.html
-    header('Location: index.html');
+    //carrega a página index.html enviado variável get cadastro
+    header('Location: index.html?cadastro=ok');
 
 } catch (PDOException $erro){
     //throw $th;
