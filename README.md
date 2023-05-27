@@ -8,8 +8,8 @@
 <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" >
   
 
-# <img src="https://img.shields.io/badge/Adobe%20Photoshop-31A8FF?style=for-the-badge&logo=Adobe%20Photoshop&logoColor=black" >
- PARA REDEFINIR O TAMANHO DAS IMAGENS
+# <img src="https://img.shields.io/badge/Adobe%20Photoshop-31A8FF?style=for-the-badge&logo=Adobe%20Photoshop&logoColor=black" > PARA REDEFINIR O TAMANHO DAS IMAGENS
+
 
 # CONSUMO DE API DE ESTADOS E MUNICIPIOS
 
