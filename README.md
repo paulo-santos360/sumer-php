@@ -1,9 +1,14 @@
 # sumer-php
  
-# TECNOLOGIAS <img src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white" > <img src="//img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white" ><img src="[https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)" > <img src="[//img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)" >
+# TECNOLOGIAS <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" >
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" > 
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" >
+<img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" > 
+<img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" >
   
 
-# PHOTOSHOP PARA REDEFINIR O TAMANHO DAS IMAGENS
+# <img src="https://img.shields.io/badge/Adobe%20Photoshop-31A8FF?style=for-the-badge&logo=Adobe%20Photoshop&logoColor=black" >
+ PARA REDEFINIR O TAMANHO DAS IMAGENS
 
 # CONSUMO DE API DE ESTADOS E MUNICIPIOS
 
