@@ -1,6 +1,6 @@
 # sumer-php
  
-# TECNOLOGIAS HTML5, CSS3, JAVASCRIPT, BOOTSTRAP e PHP 
+# TECNOLOGIAS https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white, CSS3, JAVASCRIPT, BOOTSTRAP e PHP 
 
 # PHOTOSHOP PARA REDEFINIR O TAMANHO DAS IMAGENS
 
